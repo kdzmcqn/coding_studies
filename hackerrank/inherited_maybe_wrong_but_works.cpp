@@ -10,8 +10,12 @@ class BadLengthException : public exception
 public:
     int length;
     BadLengthException(const int n) : length(n) {}
-    ~BadLengthException() {}
-    int what() { return length; }
+    // ~BadLengthException() {}
+    // int what() { return length; }
+    virtual const char *what() throw()
+    {
+        return to_string(length).c_str();
+    }
 };
 class username
 {
