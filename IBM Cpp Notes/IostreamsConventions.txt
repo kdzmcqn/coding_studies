@@ -1,0 +1,7 @@
+The iostreams headers support conversions between text and encoded forms, and input and output to external files: <fstream>, <iomanip>, <ios>, <iosfwd>, <iostream>, <istream>, <ostream>, <sstream>, <streambuf>, and <strstream>.
+
+The simplest use of iostreams requires only that you include the header <iostream>. You can then extract values from cin, to read the standard input. The rules for doing so are outlined in the description of the class basic_istream. You can also insert values to cout, to write the standard output. The rules for doing so are outlined in the description of the class basic_ostream. Format control common to both extractors and insertors is managed by the class basic_ios. Manipulating this format information in the guise of extracting and inserting objects is the province of several manipulators.
+
+You can perform the same iostreams operations on files that you open by name, using the classes declared in <fstream>. To convert between iostreams and objects of class basic_string, use the classes declared in <sstream>. And to do the same with C strings, use the classes declared in <strstream>.
+
+The remaining headers provide support services, typically of direct interest to only the most advanced users of the iostreams classes.
