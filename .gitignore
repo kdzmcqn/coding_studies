@@ -9,6 +9,9 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+<<<<<<< HEAD
 googletest/
 build/
 .cmake
+=======
+>>>>>>> 44cf5a17800bf4de880bb035b3afdf681f4eb823
