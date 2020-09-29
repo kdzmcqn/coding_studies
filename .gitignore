@@ -9,9 +9,16 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
-<<<<<<< HEAD
 googletest/
+cpp_projects/googletest
+cpp_projects/cmake
 build/
+cpp_projects/build
 .cmake
-=======
->>>>>>> 44cf5a17800bf4de880bb035b3afdf681f4eb823
+*.exe
+*/*.exkuild/smgooe
+IBMcareers/
+cpp_projects/IBMcareers
+.vscode/
+*.logs
+*.log
