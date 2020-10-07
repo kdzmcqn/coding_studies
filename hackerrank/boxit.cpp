@@ -15,8 +15,8 @@ private:
 public:
     // Constructors:
     // default
-    Box() : l{0}, b{0}, h{0} { ++BoxCreated; }
-    Box(int il, int ib, int ih) : l{il}, b{ib}, h{ih} { ++BoxCreated; }
+    Box() : l{0}, b{0}, h{0} { ++BoxCreated; }                          // temp
+    Box(int il, int ib, int ih) : l{il}, b{ib}, h{ih} { ++BoxCreated; } // NewBox
     Box(Box &B) : l{B.l}, b{B.b}, h{B.h} { ++BoxCreated; }
     // destructor
     ~Box() { ++BoxDestroyed; }
@@ -43,15 +43,15 @@ public:
         return false;
     }
 
-    friend std::ostream &operator<<(std::ostream &out, const Box &box);
+    friend ostream &operator<<(ostream &, const Box &);
 };
 
-std::ostream &operator<<(std::ostream &out, const Box &box)
+ostream &operator<<(ostream &out, const Box &box)
 {
     out << box.l << " " << box.b << " " << box.h;
     return out;
 }
-
+// namespace std
 void check2()
 {
     int n;
@@ -70,8 +70,8 @@ void check2()
             int l, b, h;
             cin >> l >> b >> h;
             Box NewBox(l, b, h);
-            temp = NewBox;
-            cout << temp << endl;
+            // temp = NewBox;
+            cout << NewBox << endl;
         }
         if (type == 3)
         {

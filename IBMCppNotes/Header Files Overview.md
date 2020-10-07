@@ -1,4 +1,5 @@
 The Standard C++ Library consists of 40 headers. Of these 40 headers, 15 constitute the Standard Template Library, or STL. 10 were added or updated with C++ Technical Report 1, or TR1. These are indicated below with the notations (STL) and (TR1):
+
 ```cpp
 <algorithm>   (STL) for defining numerous templates that implement useful algorithms
 <array>   (TR1) for defining a fixed-size array with a container-like interface
@@ -49,6 +50,6 @@ Certain materials included or referred to in this document are copyright Hewlett
 
 Notwithstanding the meta-data for this document, copyright information for this document is as follows:
 
-Copyright   IBM Corp. 1999, 2013. & Copyright   P.J. Plauger and/or Dinkumware, Ltd. 1992-2006. & Copyright   1994 Hewlett-Packard Company.
+Copyright IBM Corp. 1999, 2013. & Copyright P.J. Plauger and/or Dinkumware, Ltd. 1992-2006. & Copyright 1994 Hewlett-Packard Company.
 
 Parent topic: Standard C++ Library Overview
