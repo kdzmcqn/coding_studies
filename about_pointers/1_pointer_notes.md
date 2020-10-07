@@ -1,6 +1,6 @@
 ```cpp
 int x;
-int *p;
+int* p;
 x = x + 5;
 x = *p + 5;
 *p = *p + 5;

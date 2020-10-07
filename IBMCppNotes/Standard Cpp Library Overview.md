@@ -3,14 +3,12 @@ The C++ class is an extension of the C language structure. Because the only diff
 For example, in the following code fragment, the class X is equivalent to the structure Y:
 
 CCNX10C
-
 ```cpp
 class X {
 
   // private by default
   int a;
 ```
-
 The Standard C++ Library is supplied by IBM, and this manual is based on the Dinkum C++ Library and the Dinkum C++ Library Reference.
 
 Use of this Dinkum C++ Library Reference is subject to limitations. See the Dinkumware Notices and the IBM Notices for detailed restrictions. Also, see the specific copyright notice at the bottom of this page.
@@ -41,12 +39,12 @@ Copyright notice
 Certain materials included or referred to in this document are copyright P.J. Plauger and/or Dinkumware, Ltd. or are based on materials that are copyright P.J. Plauger and/or Dinkumware, Ltd. Also, copyright in portions of the software described in this document, and in portions of the documentation itself, is owned by Hewlett-Packard Company. The following statement applies to those portions of the software and documentation:
 
 Copyright � 1994 Hewlett-Packard Company.
-Permission to use, copy, modify, distribute and sell this software and its
-documentation for any purpose is hereby granted without fee, provided that
-the above copyright notice appear in all copies and that both that copyright
+Permission to use, copy, modify, distribute and sell this software and its 
+documentation for any purpose is hereby granted without fee, provided that 
+the above copyright notice appear in all copies and that both that copyright 
 notice and this permission notice appear in supporting documentation.  
-Hewlett-Packard Company makes no representations about the suitability of
-this software for any purpose. It is provided "as is" without express or
+Hewlett-Packard Company makes no representations about the suitability of 
+this software for any purpose. It is provided "as is" without express or 
 implied warranty.
 
 Notwithstanding any statements in the body of the document, IBM Corp. makes no representations of any kind as to which portions of the software and/or documentation are subject to Hewlett-Packard Company copyright.
@@ -60,8 +58,7 @@ Using C++ Library Headers
 Standard C++ Library Conventions
 Iostreams Conventions
 C++ Program Startup and Termination
-
-```cpp
+```
 public:
 
   // public member function
@@ -79,12 +76,10 @@ private:
   int a;
 };
 ```
-
 If you define a structure and then declare an object of that structure using the keyword class, the members of the object are still public by default. In the following example, main() has access to the members of obj_X even though obj_X has been declared using an elaborated type specifier that uses the class key class:
 
 CCNX10D
-
-```cpp
+```
 #include <iostream>
 using namespace std;
 
@@ -101,6 +96,5 @@ int main() {
   cout << "Here are a and b: " << obj_X.a << " " << obj_X.b << endl;
 }
 ```
-
 See the output of the above example:
 Here are a and b: 0 1
